@@ -18,8 +18,8 @@ abstract class Shape implements Drawable, Movable{
 }
 
 class Circle extends Shape{
-    Integer radius;
-    Float vector;
+    private Integer radius;
+    private Float vector;
 
     public Circle(Integer radius, Float vector) {
         this.radius = radius;
@@ -38,8 +38,8 @@ class Circle extends Shape{
 }
 
 class Square extends Shape{
-    Integer edge;
-    Float vector;
+    private Integer edge;
+    private Float vector;
 
     public Square(Integer edge, Float vector) {
         this.edge = edge;
@@ -58,10 +58,10 @@ class Square extends Shape{
 }
 
 class Triangle extends Shape{
-    Integer edgeOne;
-    Integer edgeTwo;
-    Integer edgeThree;
-    Float vector;
+    private Integer edgeOne;
+    private Integer edgeTwo;
+    private Integer edgeThree;
+    private Float vector;
 
     public Triangle(Integer edgeOne, Integer edgeTwo, Integer edgeThree, Float vector) {
         this.edgeOne = edgeOne;
